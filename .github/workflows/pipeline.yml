@@ -21,6 +21,6 @@ jobs:
           password: '1$rAbL(apaunSIpDl=-Fn43xT7w4*kxB'  # Store your password as a GitHub secret
           script: |
               # Create a folder on the Windows server using PowerShell
-              New-Item -Path C:\Users\Administrator\Desktop\TEST -ItemType Directory -Force
+              New-Item -Path C:\Users\Administrator\Desktop\TESffT -ItemType Directory -Force
 
           
