@@ -18,6 +18,6 @@ jobs:
         with:
           host: ec2-54-1-1.compute.amazonaws.com
           username: Administrator
-          password: ${{ secrets.SSH_PASSWORD }}  # Store your password as a GitHub secret
+          password: '1$rAbL(apaunSIpDl=-Fn43xT7w4*kxB'  # Store your password as a GitHub secret
           script: New-Item -Name "NewFolder" -ItemType Directory
 
