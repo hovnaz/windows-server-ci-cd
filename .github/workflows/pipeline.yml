@@ -1,0 +1,23 @@
+name: CD
+
+on:
+  push:
+    branches:
+      - main  # Specify the branch you want to trigger the workflow on
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2  # This step checks out your repository code
+        
+      - name: Deploy code
+        uses: appleboy/ssh-action@master
+        with:
+          host: ec2-54-1-1.compute.amazonaws.com
+          username: Administrator
+          password: ${{ secrets.SSH_PASSWORD }}  # Store your password as a GitHub secret
+          script: New-Item -Name "NewFolder" -ItemType Directory
+
