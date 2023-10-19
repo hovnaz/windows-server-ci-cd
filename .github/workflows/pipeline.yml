@@ -19,6 +19,10 @@ jobs:
           host: ec2-54-153-59-98.us-west-1.compute.amazonaws.com
           username: Administrator
           password: '1$rAbL(apaunSIpDl=-Fn43xT7w4*kxB'  # Store your password as a GitHub secret
-          script: New-Item -Path "C:\Users\Administrator\Desktop" -ItemType DirectoryForTest
+          script: |
+            # Use a PowerShell script block to execute PowerShell commands
+            Invoke-Command -ScriptBlock {
+                New-Item -Path "C:\Users\Administrator\Desktop" -ItemType DirectoryForTest -Force
+            }
 
           
