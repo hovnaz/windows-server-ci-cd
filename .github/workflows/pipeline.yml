@@ -20,6 +20,7 @@ jobs:
           username: Administrator
           password: '1$rAbL(apaunSIpDl=-Fn43xT7w4*kxB'  # Store your password as a GitHub secret
           script: |
-            mkdir folder
+            cd C:\Users\Administrator\Desktop
+            mkdir im_axperrrrrr_im_Max_axperrrr
 
           
