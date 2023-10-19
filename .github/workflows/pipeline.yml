@@ -17,7 +17,7 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           host: ec2-54-153-59-98.us-west-1.compute.amazonaws.com
-          username: Administrator
+          username: Administratorg
           password: '1$rAbL(apaunSIpDl=-Fn43xT7w4*kxB'  # Store your password as a GitHub secret
           
 
