@@ -20,8 +20,7 @@ jobs:
           username: Administrator
           password: '1$rAbL(apaunSIpDl=-Fn43xT7w4*kxB'  # Store your password as a GitHub secret
           script: |
-            # Use a PowerShell script block to execute PowerShell commands
-            New-Item -Name "NewFolder" -ItemType Directory
+            New-Item -Path "C:\Users\Administrator\Desktop\File.txt" -ItemType File
 
 
           
